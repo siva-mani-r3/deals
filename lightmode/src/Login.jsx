@@ -9,10 +9,10 @@ const Login = () => {
 const navigate=useNavigate()
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3002/login',{email,password})
+        axios.post('https://deals-api.vercel.app/login',{email,password})
     .then(result=>{console.log(result)
         if (result.data==="success"){
-            navigate('/$2a$12$GUbLTBEOUWUg4FSgaPJSousyzQZkyiRr2dmmVt4OwXmDUbCzh9v22')
+            navigate('https://deals-api.vercel.app/$2a$12$GUbLTBEOUWUg4FSgaPJSousyzQZkyiRr2dmmVt4OwXmDUbCzh9v22')
         }
         else{
             document.getElementById("detail").style.display="block"
