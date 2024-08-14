@@ -5,6 +5,7 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 
+
 const StudentModel=require('./models/Student')
 const UserModel=require('./models/Users')
 mongoose.connect("mongodb+srv://sivamaniramayanam7036:sivamani@cluster0.uu6w5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
