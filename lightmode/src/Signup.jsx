@@ -10,7 +10,7 @@ const Signup = () => {
 const navigate=useNavigate()
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3002/register',{name,email,password})
+        axios.post('https://deals-api.vercel.app/register',{name,email,password})
     .then(result=>{console.log(result)
     navigate('/login')
     })
