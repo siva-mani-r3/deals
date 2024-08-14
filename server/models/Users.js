@@ -2,7 +2,10 @@ const mongoose =require("mongoose")
 const UserSchema=new mongoose.Schema(
     {
         name:String,
-        rollno:String
+        email:String,
+        mobile:String,
+        designation:String
+        
     }
 )
 const UserModel=mongoose.model("users",UserSchema)
